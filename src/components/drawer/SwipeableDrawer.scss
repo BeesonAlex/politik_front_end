@@ -1,0 +1,27 @@
+@import '../colors.scss';
+@import '../fonts.scss';
+
+.navbar__searchbar-wrapper {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .navbar__search {
+            height: 3rem;
+            width: 90%;
+            border: 1px solid grey;
+            border-radius: 0.5rem;
+            padding-left: 3rem;
+            background: url('../../assets/icons/search.svg') no-repeat;
+            background-position: 1rem 50%;
+
+            @include subheader();
+            color: $black;
+
+        }
+    }
+
+.drawer-title {
+    @include h3-header;
+}

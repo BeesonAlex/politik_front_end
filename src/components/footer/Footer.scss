@@ -1,0 +1,50 @@
+@import '../fonts.scss';
+@import '../colors.scss';
+
+
+.footer-wrapper {
+    height: 100%;
+    width: 100%;
+    position:relative;
+    margin-top: 2rem;
+    
+    .footer__graphic {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+    
+    .footer__title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 1rem;
+        align-items: center;
+
+        .footer-title {
+            @include h3-header;
+            padding: 0rem;
+            margin-left: 1rem;
+        }
+
+        .footer__content__social-wrapper {
+            display:flex;
+
+            .social-icon {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    .footer__content__link-wrapper {
+        margin: 1rem 0rem 1.5rem 1.5rem;
+
+        .link {
+            margin-bottom: 0.5rem;
+            @include subheader;
+            color: grey;
+        }
+    }
+
+
+
+}

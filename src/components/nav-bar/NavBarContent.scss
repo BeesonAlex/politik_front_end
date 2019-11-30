@@ -1,0 +1,54 @@
+@import '../fonts.scss';
+@import '../colors.scss';
+
+.navbar-content-background {
+    width: 100%;
+    height: 100%;
+
+.navbar-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8.125rem;
+    border-radius: 0rem 0rem 2.5rem 2.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: $politik-yellow;
+    margin-bottom: 1rem;
+    width: 100%;
+    position: absolute;
+
+    .navbar-content__items-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 1rem 3rem;
+
+    .navbar-content__hamburger-menu-wrapper {
+
+
+        .navbar-content__menu-icon {
+
+        }
+    }
+
+    .navbar-content__logo-wrapper {
+
+
+        .navbar-content__logo {
+            height: 5rem;
+            width: auto;
+
+        }
+    }
+
+    .navbar-content__search-wrapper {
+
+
+        .navbar-content__search-icon {
+
+        }
+    }
+}
+}
+}

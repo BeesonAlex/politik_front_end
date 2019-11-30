@@ -1,0 +1,70 @@
+@import '../fonts.scss';
+@import '../colors.scss';
+
+.country-select-wrapper {
+    background-color: $politik-light-grey;
+    width: 100%;
+    height: 100%;
+    padding: 9rem 0rem 1.5rem 0rem;
+    box-shadow: $box-shadow;
+
+    .country-select__card {
+        margin: 0rem 1rem;
+        border-radius: 1.25rem;
+        box-shadow: $box-shadow;
+        background-color: $white;
+
+        .country-select__title {
+            @include h2-header;
+            margin: 0rem;
+            padding: 1.5rem 0rem 2rem 1rem;
+            text-align: left;
+            text-decoration: underline $politik-yellow;
+        }
+
+        .country-item-wrapper {
+            margin: 0rem 1rem 1rem 1rem;
+            padding: 0rem 0rem 1rem 0rem;
+            border-bottom: 1px solid $mercury;
+            display: flex;
+            align-items: center;
+
+            .country-item-flag-wrapper {
+
+                .country-item__flag {
+                    height: 65px;
+                    width: 75px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 5px;
+                    border: 1px solid $black;
+                }
+            }
+
+            .country-item-details-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: 1rem;
+
+                .country-item__country-name{
+                    width: 100%;
+                    margin: 0rem;
+                    text-align: left;
+                }
+
+                .country-item-details__system-region-wrapper {
+                    margin-top: 0.5rem;
+
+                    .country-item__details--partysystem {
+                        margin: 0rem;
+                    }
+
+                    .country-item__details--subregions {
+                        margin: 0rem;
+                    }
+                }
+            }
+        }
+    }
+}

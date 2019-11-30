@@ -1,0 +1,26 @@
+@import '../fonts.scss';
+@import '../colors.scss';
+
+.budget-wrapper {
+    background-color: $politik-light-grey;
+    padding: 9rem 0rem 1.5rem 0rem;
+    box-shadow: $box-shadow;
+
+    .budget__budget-details-wrapper {
+        margin: 0rem 1rem 1rem 1rem;
+        border-radius: 1.25rem;
+        box-shadow: $box-shadow;
+        background-color: $white;
+        padding-bottom: 1.5rem;
+
+        .party__party-details--title {
+            @include h2-header;
+        }
+
+        .budget__title-subheading {
+            @include subheader;
+            margin: 0rem 1rem 1rem 1rem;
+        }
+
+}
+}

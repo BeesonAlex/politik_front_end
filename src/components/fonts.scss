@@ -1,0 +1,139 @@
+@import './colors.scss';
+@import '../App.scss';
+
+/* Font Imports */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+@font-face {
+    font-family: 'Caslon Bold';
+    src: url('../../assets/fonts/librecaslontext-bold.otf') format("opentype");
+}
+@font-face {
+    font-family: 'Caslon Regular';
+    src: url('../../assets/fonts/librecaslontext-regular.otf') format("opentype");
+}
+@font-face {
+    font-family: 'Futura Bold';
+    src: url('../../assets/fonts/Futura-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Futura Regular';
+    src: url('../../assets/fonts/Futura-Medium.ttf') format('truetype');
+}
+
+
+/* Mixins */
+
+@mixin hero-header () {
+    font-family:'Caslon Bold', serif;
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    color: $black;
+}
+
+@mixin h1-header () {
+    font-family:'Caslon Bold', serif;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    color: $black;
+}
+
+@mixin h2-header () {
+    font-family:'Caslon Bold', serif;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    color: $black;
+    margin: 0rem;
+    padding: 1rem;
+    text-align: left;
+    text-decoration: underline $politik-yellow;
+}
+@mixin h3-header () {
+    font-family:'Caslon Bold', serif;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: $black;
+    margin: 0rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+@mixin subheader () {
+    font-family:'Futura Bold', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: $black;
+}
+
+@mixin paragraph () {
+    font-family:'Roboto', sans-serif;
+    font-size: 1;
+    line-height: 1.75rem;
+    color: $black;
+}
+
+@mixin paragraph-futura () {
+    font-family:'Futura Regular', sans-serif;
+    font-size: 1;
+    line-height: 1.75rem;
+    color: $black;
+}
+
+@mixin list () {
+    font-family:'Roboto', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: $black;
+}
+
+@mixin label () {
+    font-family:'Roboto', sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: $black;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: grey;
+}
+
+/* Mobile Mixins */
+
+@mixin m-h1-header () {
+    font-family:'Avenir Next Bold', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: $black;
+}
+
+@mixin m-h2-header () {
+    font-family:'Avenir Next Demi-Bold', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 600;
+    color: $black;
+}
+
+@mixin m-paragraph () {
+    font-family:'Avenir Next Regular', sans-serif;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: $black;
+}
+
+@mixin m-list () {
+    font-family:'Avenir Next Regular', sans-serif;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: $black;
+}
+
+@mixin m-label () {
+    font-family:'Avenir Next Regular', sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: $silver;
+    text-transform: uppercase;
+    font-weight: 600;
+}
